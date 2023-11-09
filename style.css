@@ -1,0 +1,267 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@400;500;700&family=Prata&family=Roboto:wght@400;700&display=swap');
+
+ .header {
+     background-color: #F4F3E7;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+ }
+
+ .header .navbar-brand {
+     color: #00473c;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 35px;
+ }
+
+ .navbar-expand-lg .navbar-nav .nav-link {
+     color: #0E150E;
+ }
+
+
+ .header .nav-link:hover {
+     text-decoration: underline;
+ }
+
+ .Banner {
+     width: 100%;
+     height: 100%;
+     min-height: 100vh;
+     background-image: url('./images/pp4.jpg');
+     /* background-image: url('./images/BannerImg1.jpeg'); */
+     background-size: cover;
+     background-position: center;
+     position: relative;
+ }
+
+ .Banner-carousal-captions {
+     font-family: SweetSans, SweetSansText, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 300;
+     line-height: .85;
+     display: flex;
+     /* justify-content: center; */
+     flex-direction: column;
+     align-items: start;
+     position: absolute;
+     bottom: 100px;
+     left: 50px;
+     color: white;
+
+ }
+
+ .Banner-carousal-captions h5 {
+     font-size: 20px;
+ }
+
+ .Banner-carousal-captions p {
+     font-size: 80px;
+ }
+
+ .Banner-carousal-captions button {
+     color: #00473C;
+     background-color: #E6FF55;
+     border: 1px solid #E6FF55;
+     border-radius: 1000px;
+     width: 230px;
+     height: 50px;
+ }
+
+ .Banner-carousal-captions button:hover {
+     color: white;
+     background-color: #00473C;
+     border: 1px solid #00473C;
+ }
+
+ .Item-slides h2 {
+     min-height: 100px;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Prata', serif;
+     font-weight: 200;
+     word-spacing: .04em;
+     font-size: 40px;
+ }
+
+ .card {
+     border: 0;
+     background-color: #F4F3E7;
+ }
+
+ .card img {
+     border-radius: 5%;
+ }
+
+ .Item-slides {
+     background-color: #F4F3E7;
+ }
+
+ .card-body a:hover {
+     text-decoration: underline;
+ }
+
+ .favourites-section {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #a9c1a9;
+ }
+
+ .fav-img img {
+     height: 100%;
+     width: 100%;
+ }
+
+ .fav-text {
+     width: 100%;
+     height: 100%;
+ }
+
+ .fav-text h5 {
+     font-size: 16px;
+     font-weight: 200;
+ }
+
+ .fav-text h2 {
+     font-size: 45px;
+     font-weight: 500;
+     font-family: SweetSans, SweetSansText, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+ .fav-text p {
+     font-size: 20px;
+     font-weight: 300;
+     font-family: SweetSans, SweetSansText, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     padding: 0 0 50px 0;
+ }
+
+ .fav-text button {
+     width: 170px;
+     height: 40px;
+     border: 1px solid black;
+     border-radius: 1000px;
+ }
+
+ .fav-text button:hover {
+     color: white;
+     background-color: black;
+ }
+
+ .container-fluid {
+     padding-left: 0;
+     padding-right: 0;
+ }
+
+ .marquee-text {
+     overflow: hidden;
+     position: relative;
+     width: 100%;
+     height: 90px;
+     display: flex;
+     align-items: center;
+ }
+
+ .marq-sml {
+     font-weight: 300;
+     margin-right: 40px;
+ }
+
+ .marq-lrg {
+     font-size: 40px;
+     font-weight: 300;
+ }
+
+ .marquee-content {
+     display: inline-block;
+     white-space: nowrap;
+     animation: marquee 25s linear infinite;
+     /* Adjust the duration as needed */
+ }
+
+ @keyframes marquee {
+     0% {
+         transform: translateX(100%);
+     }
+
+     100% {
+         transform: translateX(-100%);
+     }
+ }
+
+ .contact-us {
+     background-color: #D8E5D6;
+ }
+
+ .contact-us h2 {
+     font-size: 18px;
+     font-weight: 400;
+ }
+
+ .contact-footer ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ .contact-footer a {
+     text-decoration: none;
+     color: black;
+     font-size: 15px;
+     font-weight: 200;
+ }
+
+ .contact-footer a:hover {
+     text-decoration: underline;
+ }
+
+ @media (max-width: 767px) {
+     .carousel-item img {
+         height: 350px;
+         width: 100%;
+     }
+
+ }
+
+ .Banner2-carousal-captions {
+     font-family: SweetSans, SweetSansText, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 300;
+     line-height: .85;
+     /* display: flex; */
+     /* flex-direction: column; */
+     /* align-items: flex-end; */
+     position: absolute;
+     /* bottom: 100px; */
+     left: 12%;
+     color: white;
+     text-align: left;
+ }
+
+ .Banner2-carousal-captions h5 {
+     font-size: 15px;
+ }
+
+ .Banner2-carousal-captions p {
+     font-size: 70px;
+     opacity: 0.5;
+ }
+
+ .Banner2-carousal-captions button {
+     color: #00473C;
+     background-color: #E6FF55;
+     border: 1px solid #E6FF55;
+     border-radius: 1000px;
+     width: 230px;
+     height: 50px;
+ }
+
+ .Banner2-carousal-captions button:hover {
+     color: white;
+     background-color: #00473C;
+     border: 1px solid #00473C;
+ }
+
+ .img-hover:hover {
+     transform: scale(1.02);
+ }

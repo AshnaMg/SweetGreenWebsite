@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restraunt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarToggle = document.querySelector(".navbar-toggler");
+            const navbarNav = document.querySelector("#navbarNav");
+
+            navbarToggle.addEventListener("click", function () {
+                if (navbarNav.style.display === "block") {
+                    navbarNav.style.display = "none";
+                } else {
+                    navbarNav.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+    <section class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">sweetgreen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span><i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">OUR MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">OUR MISSION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">THE MARKET</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">OUTPOST</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CATERING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOCATIONS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section class="Banner">
+        <!-- <img src="./images/BannerImg1.jpeg" class="d-block w-100" alt="..."> -->
+        <div class="Banner-carousal-captions">
+            <h5>NOT SALAD</h5>
+            <p>Protein Plates are here</p>
+            <button type="button" class="btn">ORDER NOW</button>
+        </div>
+    </section>
+    <section class="Item-slides pt-5 pb-5">
+        <div class="container">
+            <h2 class="text-center">Salads</h2>
+            <div class="row">
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Salad1.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">KALE CAESAR</h5>
+                            <p class="card-text">Roasted chicken, tomatoes, parmesan crisps, shaved parmesan, shredded
+                                kale, chopped romaine, lime squeeze, caesar</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Salad2.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">GUACAMOLE GREENS</h5>
+                            <p class="card-text">Roasted chicken, avocado, tomatoes, red onions, shredded cabbage,
+                                tortilla chips, spring mix, chopped romaine, lime squeeze, lime cilantro jalapeño
+                                vinaigrette</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Salad3.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BUFFALO CHICKEN</h5>
+                            <p class="card-text">Blackened chicken, pickled onions, tomatoes, raw carrots, cilantro,
+                                blue cheese, za’atar breadcrumbs, shredded kale, chopped romaine, sweetgreen hot sauce,
+                                caesar</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-center">Warm Bowls</h2>
+            <div class="row">
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Bowl1.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HARVEST BOWL</h5>
+                            <p class="card-text">Roasted chicken, roasted sweet potatoes, apples, goat cheese, roasted
+                                almonds, wild rice, shredded kale, balsamic vinaigrette</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Bowl2.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CHICKEN PESTO PARM</h5>
+                            <p class="card-text">Roasted chicken, spicy broccoli, tomatoes, shaved parmesan, za’atar
+                                breadcrumbs, warm quinoa, baby spinach, sweetgreen hot sauce, pesto vinaigrette</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Bowl3.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SHROOMAMI</h5>
+                            <p class="card-text">Roasted tofu, warm portobello mix, cucumbers, basil, shredded cabbage,
+                                roasted almonds, wild rice, shredded kale, miso sesame ginger dressing</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-center">Sides</h2>
+            <div class="row">
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Side1.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ROSEMARY FOCACCIA</h5>
+                            <p class="card-text">Locally-made rosemary focaccia. Check out our regional bakery partners
+                            </p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Side2.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CASHEW PESTO SWEET POTATOES</h5>
+                            <p class="card-text">Hot roasted sweet potatoes served with a spicy plant-based cashew pesto
+                            </p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-12 col-md-4">
+                    <div class="card">
+                        <img src="./images/Side3.jpeg" class="card-img-top img-hover" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HIBISCUS CLOVER TEA</h5>
+                            <p class="card-text">Refreshing crimson clover tea mixed with bright berries and tangy
+                                hibiscus</p>
+                            <a href="#" class="btn">Order now <i class="fa-regular fa-arrow-right"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./images/BannerImg2.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block Banner2-carousal-captions">
+                        <h5>SWEETGREEN MARKET</h5>
+                        <p>Explore our new merch shop</p>
+                        <button type="button" class="btn">I WANT IT</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./images/BannerImg3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block Banner2-carousal-captions">
+                        <h5>JOIN SWEETPASS</h5>
+                        <p>Our free loyalty program</p>
+                        <button type="button" class="btn">EXPLORE PERKS</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./images/BannerImg4.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block Banner2-carousal-captions">
+                        <h5></h5>
+                        <p>Where should we open next</p>
+                        <button type="button" class="btn">LET US KNOW</button>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./images/BannerImg5.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block Banner2-carousal-captions">
+                        <h5></h5>
+                        <p>Come join our team</p>
+                        <button type="button" class="btn">FIND OUT MORE</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="favourites-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-xs-12 col-sm-12 col-md-12">
+                    <div class="fav-text">
+                        <h5>SWEETGREEN EXCLUSIVES</h5>
+                        <h2>Fuel up with high-protein picks</h2>
+                        <p>Let our top protein-rich options power your day.<br>
+                            This hearty collection features our Harvest Bowl, Buffalo Chicken Bowl, Chicken Pesto Parm,
+                            and Hot Honey Chicken plate. Ordered often and always a hit, these popular picks are true
+                            sweetgreen staples.
+                        </p>
+                        <div>
+                            <button type="button" class="btn">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-xs-12 col-sm-12 col-md-12">
+                    <div class="fav-img">
+                        <img src="./images/fav-img.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="marquee-text">
+            <div class="marquee-content">
+                <span class="marq-sml"> LATE SUMMER </span>
+                <span class="marq-lrg"> New Menu Drop Italian Chopped, Elote Bowl, BBQ Chicken Salad </span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-xs-12 col-sm-4 col-md-4">
+                    <div class="contact-footer">
+                        <h2 class="">About Us</h2>
+                        <ul class="">
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Investor Relations</a></li>
+                            <li><a href="">Locations</a></li>
+                            <li><a href="">Press</a></li>
+                            <li><a href="">sweetgreen app</a></li>
+                            <li><a href="">Covid-19 safety</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-4 col-md-4">
+                    <div class="contact-footer">
+                        <h2 class="">Social Media</h2>
+                        <ul class="">
+                            <li><a href="">Instagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li><a href="">TikTok</a></li>
+                            <li><a href="">Spotify</a></li>
+                            <li><a href="">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-xs-12 col-sm-4 col-md-4">
+                    <div class="contact-footer">
+                        <h2 class="">Support + Services</h2>
+                        <ul class="">
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Gift Cards</a></li>
+                            <li><a href="">Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
